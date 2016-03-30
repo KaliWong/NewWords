@@ -1,9 +1,17 @@
-<<!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">  
 </head>
-<body>
-Hello World
+<body ng-controller="MyController">
+	
+	<h1>Learn New Words</h1>
+
+	<div>
+	    <input ng-model="newWord"></input>
+	</div>
+
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="index.js"></script>
 </body>
-</html>>
+</html>
