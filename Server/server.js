@@ -27,4 +27,17 @@ app.post('/saveCurrent', function (req, res) {
 
 })
 
+app.get('/getSaved', function (req, res) { // when get function is called under /getSaved address, run the following request and response functions
+  // setup query and done function here
+	var query = {} // get everything from the database
+
+  	var done = function (err, data) {
+    	console.log('I just read stuff from the database')
+    	res.send(data)
+  }
+
+  database.find(query, done)
+})
+
+
 app.listen(8080) // This server is listening to this part. computer port: 8080
