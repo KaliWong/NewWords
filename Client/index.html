@@ -13,7 +13,9 @@
 	    <button ng-click="getSavedWords()">Update List</button>
 	</div>
 
-	<div ng-repeat="w in words"> {{w.word}} </div>
+	<div ng-repeat="w in words" ng-click="showGifs($event)"> {{w.word}} </div>
+
+	<img ng-src="{{gifUrl}}">
 
 	<script src="node_modules/angular/angular.js"></script>
 	<script src="index.js"></script>
